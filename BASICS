@@ -1,0 +1,38 @@
+Get-Command *
+--Gets every cmdlet avalaible
+    Get-Command *process*
+
+Get-Help 
+--This will get help on that cmdlet
+    Get-Help <cmdlet>
+    Get-Help <cmdlet> -Examples
+
+Get-Process
+--gets process
+
+Get-Member
+--Evaluates objects to methods and properties
+   eg Get-Date | Get-Member
+   eg Get-Date | Format-List
+
+Get-ItemProperty
+--Gets properties of a specified item
+
+Get-Module
+--Displays modules
+  eg Get-Module -ListAvailable
+  eg Get-Module -Name <module name>
+
+Find-Module
+--searches the gallery(repo)
+  eg Find-Module -Name <ModuleName>
+  eg Find-Module -Tag telegram
+  eg Find-Module -Name *wildcard*
+  --Install the module
+    Install-Module -Name <ModuleName>
+      --to avoid warnings
+        Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+    
+  
+
+
