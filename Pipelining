@@ -1,0 +1,10 @@
+Pipelining
+--cmdlet to cmdlet to cmdlet
+  eg Get-Process | Sort-Object CPU -Descending | Select-Object -First 5
+  eg Get-Service  | Where-Object {$Status -eq'running'}
+  eg Get-Service  | Where Status -eq 'Running' 
+    --List large files in a folder
+        eg Get-ChildItem -Path <abs path to folder> -Recurse |  Where-Object {$_.Length -gt 10MB} | Sort-Object Length -Descendeing | Select-Object Name, Length
+         --$psitem , the automatic var that represents the current object in the pipeline
+            eg Get-Service | Where-Object {$PSItem.Status -eq 'Running'}
+            eg
