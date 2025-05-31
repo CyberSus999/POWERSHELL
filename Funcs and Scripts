@@ -1,0 +1,11 @@
+functions
+  function Func-Name {
+    param (
+            [string]$Name
+          )
+          Write-Output "Hello, $Name 
+  Func-Name -Name "value"
+--save it in .ps1 files 
+  eg script.ps1
+---ExecutionPolicy error
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass/RemoteSigned
