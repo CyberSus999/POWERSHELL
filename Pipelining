@@ -7,4 +7,11 @@ Pipelining
         eg Get-ChildItem -Path <abs path to folder> -Recurse |  Where-Object {$_.Length -gt 10MB} | Sort-Object Length -Descendeing | Select-Object Name, Length
          --$psitem , the automatic var that represents the current object in the pipeline
             eg Get-Service | Where-Object {$PSItem.Status -eq 'Running'}
-            eg
+            eg Get-Process | ForEach-Object {$PSItem}
+            eg Get-Date | Format-Table
+            eg Get-Date | Format-List
+            eg Get-Process <wildcard> | Format-List *
+            eg Get-Process <wildcard> | Select-Object Id,Name,CPU,Responding
+            eg 
+
+
