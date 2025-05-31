@@ -1,1 +1,15 @@
+CREATE A NEW FILE
+New-Item -Path "Drive:path\to\save\at" -ItemType File
+
+READ FILE
+Get-Content "Drive:\path\to\file"
+
+Write to file
+Set-Content "Drive:\path\to\file" -Value "contents"
+
+Remove a file
+Remove-Item "path"
+
+list large files
+Get-ChildItem -Recurse | Where-Object {$PSItem.length -gt 100MB}
 
