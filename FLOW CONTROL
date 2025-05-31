@@ -1,0 +1,34 @@
+CONDITIONALS
+ $number = 10 
+  if ($number -gt 5) {
+      Write-Output "NUmber is greater than five"
+  } elseif ($number -eq 5){
+      Write-Output "NUmber is equal to five"
+  }  else {
+      Write-Output "Number is less than five"
+  }
+
+LOOPS
+
+For
+  for ($i = 0; $i -lt 5; $i++) {
+      Write-Output "iteration $i"
+    }
+
+While
+  $count = 0
+  while ($count -lt 3) {
+    Write-Output "Count is $count"
+    $count++
+  }
+
+Foreach 
+
+$names = @("Moth", "Cleo", "Clumsy")
+foreach ($name in $names) {
+  Write-Output "Hello!! $name"
+}
+
+
+    
+      
