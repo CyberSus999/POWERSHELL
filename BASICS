@@ -32,7 +32,15 @@ Find-Module
     Install-Module -Name <ModuleName>
       --to avoid warnings
         Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-    
+
+VARIABLES
+
+$VarName= data type
+--typecasting
+    eg [DataType]$VarName= Value(s)
+Write-Output $DataType
+
+ 
   
 
 
